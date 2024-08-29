@@ -53,9 +53,9 @@
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>    
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-file"></i> <span>Certifications</span></a></li>
           <li><a href="#Skills" class="nav-link scrollto"><i class="bx bxs-quote-alt-right"></i> <span>Skills</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-file"></i> <span>Certifications</span></a></li>
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
           
@@ -69,15 +69,11 @@
 
   <!-- ======= Hero Section ======= -->
   
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+  <section id="hero" class="d-flex flex-column justify-content-start align-items-center">
     <div class="hero-container" data-aos="fade-in">
-        <h1>Aashish Sharma</h1>
-      
-      <!-- <img src="../img/aashish1.jpeg">
-      <h1 class="heading">Aashish Sharma</h1> -->
-      
+        <!-- <h1>Aashish Sharma</h1> -->
     </div>
-  </section>
+</section>
 
 
 
@@ -94,6 +90,17 @@
     
   <!--Download CV-->
   <style>
+#hero {
+    height: 100vh; /* Keep this if you want the section to take up the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: center;
+}
+
+.hero-container {
+    margin-top: 20px; /* Optional: Adds some space from the top */
+}
     .btn-container {
         display: flex;
         justify-content: center;
@@ -123,6 +130,9 @@
   .button1 {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
+  .shadow{
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.1), 0 3px 10px 0 rgba(0,0,0,0.19);
+  }
 </style>
 </head>
 <body>
@@ -134,15 +144,14 @@
         >
         Download CV
         </button> -->
-        <button class="button button1"  onclick="window.open('./assets/img/Resume-Aashish Sharma.pdf')">
+        <button class="button shadow"  onclick="window.open('./assets/img/Resume-Aashish Sharma.pdf')">
           
           Download CV
         </button>
     </div>
 </div>
 <!--  -->
-
-    <section id="about" class="about">
+    <section id="about" class="about section-bg shadow" style="margin-top:15px;">
       <div class="container">
 
         <div class="section-title">
@@ -172,22 +181,24 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>49</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <p><a href="https://www.google.com/maps/place/Antriksh+Golf+View+1/@28.5580753,77.3842242,17z/data=!3m1!4b1!4m6!3m5!1s0x390ceff4b9ec0f63:0xab8c35907229b0c9!8m2!3d28.5580706!4d77.3867991!16s%2Fg%2F11g1nr9zf7?entry=ttu">N-1401, Antriksh Golf View 1, Sector–78, NOIDA, U.P., INDIA,201301</a></p>
-                 
-                 
                 </ul>
               </div>
-           <strong>Education:</strong> 
+              <div class="col-lg-12">
+                <ul>
+           <strong style="margin-bottom: 10px;">Education:</strong> 
            <br>
-           <span> Bachelor of Legislative Law (LLB) 
+           <span> 
+            <i class="bi bi-chevron-right"></i>Bachelor of Legislative Law (LLB) 
             <br> 
-            Post graduate Diploma in Management  <br>
-            Bachelor of Commerce from H.N.B. Garhwal University <br>
-            Certified Pharmacist having Diploma in Pharmacy (DPHARMA)</span>   
+            <i class="bi bi-chevron-right"></i> Post graduate Diploma in Management  <br>
+            <i class="bi bi-chevron-right"></i>Bachelor of Commerce from H.N.B. Garhwal University <br>
+            <i class="bi bi-chevron-right"></i>Certified Pharmacist having Diploma in Pharmacy (DPHARMA)
+          </span>   
             </div>
           </div>
         </div>
        <br>
-       <p style="text-align: justify;">
+       <p style="text-align: justify; margin-top: 10px;">
         As an accomplished IT Contract & Program Management professional, I bring a wealth of expertise in SLA management, Contract Governance, Customer-centric approach, IT Operations, Data Centre Planning, Commissioning & Migrations, Facility Operations, IT Planning & IT Projects for Telecom Organization & Power Utility Sector, Annual IT budgeting, Cost Control, Resource Planning and Management & Vendor Management.
         My well-established network of industry leaders, coupled with my exceptional Interpersonal and People Management skills, empowers me to cultivate enduring relationships with peers, business leaders, vendors, and system integrators. With a proven track record in leading complex projects, ensuring seamless IT service delivery, and managing resources and budgets, I exemplify a steadfast commitment to customer satisfaction.
         My expertise in Vendor Management further underscores my ability to forge strategic partnerships and drive success in the dynamic landscape of technology and IT.
@@ -197,13 +208,79 @@
     
     </section>
     <!-- End About Section -->
-
-
-
-    <!-- ======= Skills Section ======= -->
-
-
-    <section id="Skills" class="Skills section-bg">
+      <!-- =======********************************** Certifications Section **********************************======= -->
+    <section id="portfolio" class="portfolio shadow">
+      <div class="container">
+    
+        <div class="section-title">
+          <h2>Certifications</h2>
+          <p> Industry Certifications</p>
+        </div>
+    
+    
+        
+    </head>
+    <body>
+      <div class="container">
+          <ul class="certifications">
+            ✔️ COBIT 5 Certified Professional
+            <br>
+            ✔️ Prince2 Foundation Certified Professional (Project in Controlled Environment)
+            <br>
+            ✔️ ITIL V3 Foundation Certified Professional
+            <br>
+            ✔️ Certificate in Computing from Indira Gandhi National Open University
+            <br>
+            ✔️ LAN & WAN Core Technologies Course from SILICONUNIV, Delhi
+            <br>
+            ✔️ ORACLE DEVELOPER-2000 Course from Regional Computer Center, NIC (INDIA)
+            <br>
+            ✔️ Higher Diploma in Information and System Management from APTECH COMPUTER EDUCATION
+            <br>
+            ✔️ Diploma in Computer Programming & System Design from SCE, Under Ministry of Human Resources
+          </ul>
+      </div>
+    
+      <!-- <section id="portfolio" class="portfolio section-bg"> -->
+        <div class="container">
+      
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .logo-container {
+            padding: 10px;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex align-items-center justify-content-center logo-container">
+                <img src="assets/img/c1-removebg-preview.png" class="img-fluid" alt="Logo 1">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex align-items-center justify-content-center logo-container">
+                <img src="assets/img/c2-removebg-preview.png" class="img-fluid" alt="Logo 2">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex align-items-center justify-content-center logo-container">
+                <img src="assets/img/c3-removebg-preview.png" class="img-fluid" alt="Logo 3">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex align-items-center justify-content-center logo-container">
+                <img src="assets/img/c4-removebg-preview.png" class="img-fluid" alt="Logo 4">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    
+      
+        </div>
+        </section>
+        <!-- End Certifications Section -->
+    <!-- =======********************************* Skills Section ******************************************======= -->
+    <section id="Skills" class="Skills shadow section-bg">
       <div class="container">
     
         <!-- Skills Section -->
@@ -280,12 +357,10 @@
     
       </div>
     </section>
-<!-- End Skills Section -->
-
-
-
-<!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <!--========********************************* End Skills Section ***************************************======== -->
+   
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume shadow">
       <div class="container">
 
         <div class="section-title">
@@ -303,7 +378,7 @@
       
   <div class="card--work-history">
 
-    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
+    <div class="shadow" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
       <div style="font-size: 1.2em; font-weight: bold;">
           🚧 Associate Director | Infinite Computer Solutions (India) Limited
       </div>
@@ -344,7 +419,7 @@
 
   <div class="card--work-history">
       
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
+      <div class="shadow" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
         <div style="font-size: 1.2em; font-weight: bold;">
             🚧 Independent consultant | ATP
         </div>
@@ -380,7 +455,7 @@
   <div class="card--work-history">
      
 
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
+      <div class="shadow" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
         <div style="font-size: 1.2em; font-weight: bold;">
             🚧 Head System & Servers | Globacom Limited
         </div>
@@ -441,7 +516,7 @@
   <div class="card--work-history">
      
 
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
+      <div class="shadow" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
         <div style="font-size: 1.2em; font-weight: bold;">
             🚧 Deputy General Manager | Telenor
         </div>
@@ -512,7 +587,7 @@
   <div class="card--work-history">
       
 
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
+      <div class="shadow" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
         <div style="font-size: 1.2em; font-weight: bold;">
             🚧 Senior Manager | AIRCEL
         </div>
@@ -579,7 +654,7 @@
   <div class="card--work-history">
       
 
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
+      <div class="shadow" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
         <div style="font-size: 1.2em; font-weight: bold;">
             🚧 Senior Manager | Spice Communications Limited
         </div>
@@ -638,7 +713,7 @@
 
   <div class="card--work-history">
 
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
+      <div class="shadow" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
         <div style="font-size: 1.2em; font-weight: bold;">
             🚧 Program Manager | TATA Teleservices Limited
         </div>
@@ -695,7 +770,7 @@
 
   <div class="card--work-history">
      
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
+      <div class="shadow" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
         <div style="font-size: 1.2em; font-weight: bold;">
             🚧 Senior Executive | BHARTI AIRTEL LIMITED
         </div>
@@ -728,7 +803,7 @@
 
           <div class="card--work-history">
           
-          <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
+          <div class="shadow" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
             <div style="font-size: 1.2em; font-weight: bold;">
                 🚧 Assistant Manager | Spectramind e-Services Private Limited
             </div>
@@ -755,7 +830,7 @@
 
   <div class="card--work-history">
 
-      <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
+      <div class="shadow" style="display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid #000;">
         <div style="font-size: 1.2em; font-weight: bold;">
             🚧 Executive Systems | KOSHIKA TELECOM LIMITED “USHAFONE"
         </div>
@@ -773,92 +848,9 @@
 
       
     </section>
- <!-- End Resume Section -->
-
-
-     
-<!-- ======= Certifications Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Certifications</h2>
-          <p> Industry Certifications</p>
-        </div>
-
-
-        
-  </head>
-  <body>
-      <div class="container">
-          <ul class="certifications">
-            ✔️ COBIT 5 Certified Professional
-            <br>
-            ✔️ Prince2 Foundation Certified Professional (Project in Controlled Environment)
-            <br>
-            ✔️ ITIL V3 Foundation Certified Professional
-            <br>
-            ✔️ Certificate in Computing from Indira Gandhi National Open University
-            <br>
-            ✔️ LAN & WAN Core Technologies Course from SILICONUNIV, Delhi
-            <br>
-            ✔️ ORACLE DEVELOPER-2000 Course from Regional Computer Center, NIC (INDIA)
-            <br>
-            ✔️ Higher Diploma in Information and System Management from APTECH COMPUTER EDUCATION
-            <br>
-            ✔️ Diploma in Computer Programming & System Design from SCE, Under Ministry of Human Resources
-          </ul>
-      </div>
-
-      <section id="portfolio" class="portfolio section-bg">
-        <div class="container">
-      
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .logo-container {
-            padding: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex align-items-center justify-content-center logo-container">
-                <img src="assets/img/c1-removebg-preview.png" class="img-fluid" alt="Logo 1">
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex align-items-center justify-content-center logo-container">
-                <img src="assets/img/c2-removebg-preview.png" class="img-fluid" alt="Logo 2">
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex align-items-center justify-content-center logo-container">
-                <img src="assets/img/c3-removebg-preview.png" class="img-fluid" alt="Logo 3">
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-flex align-items-center justify-content-center logo-container">
-                <img src="assets/img/c4-removebg-preview.png" class="img-fluid" alt="Logo 4">
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-
-      
-        </div>
-      </section>
-
-    <!-- End Certifications Section -->
-
-
-
-
-
-
+    <!-- End Resume Section -->
     <!-- ======= Projects Section ======= -->
- 
-
-     <section id="services" class="services section-bg">
+    <section id="services" class="services shadow section-bg">
       <div class="container">
     
         <div class="section-title">
@@ -936,16 +928,9 @@
     
       </div>
     </section>
-    
-    
     <!-- End  Projects Section -->
-
-
-
-
-
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+    <section id="testimonials" class="testimonials shadow">
       <div class="container">
 
         <div class="section-title">
@@ -1144,14 +1129,8 @@
 
       </div>
     </section><!-- End Testimonials Section -->
-
-
-
-
-
-
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact shadow section-bg">
       <div class="container">
 
         <div class="section-title">
