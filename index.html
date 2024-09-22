@@ -27,6 +27,15 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script defer>
+      (function() {
+          emailjs.init("X8Uy_BZnDsjjAr7-D"); // Replace with your EmailJS public key
+          console.log('EmailJS SDK initialized');
+      })();
+  </script>
+  <script src="script.js" defer></script> <!-- Your custom script -->
 
  
 </head>
@@ -1139,61 +1148,66 @@
         </div>
 
         <div class="row" data-aos="fade-in">
-
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p><a href="https://www.google.com/maps/place/Antriksh+Golf+View+1/@28.5580753,77.3842242,17z/data=!3m1!4b1!4m6!3m5!1s0x390ceff4b9ec0f63:0xab8c35907229b0c9!8m2!3d28.5580706!4d77.3867991!16s%2Fg%2F11g1nr9zf7?entry=ttu">N-1401, Antriksh Golf View 1, Sector–78, NOIDA, U.P., INDIA,201301</a></p>
+                <div class="address">
+                    <i class="bi bi-geo-alt"></i>
+                    <h4>Location:</h4>
+                    <p><a href="https://www.google.com/maps/place/Antriksh+Golf+View+1/@28.5580753,77.3842242,17z/data=!3m1!4b1!4m6!3m5!1s0x390ceff4b9ec0f63:0xab8c35907229b0c9!8m2!3d28.5580706!4d77.3867991!16s%2Fg%2F11g1nr9zf7?entry=ttu">N-1401, Antriksh Golf View 1, Sector–78, NOIDA, U.P., INDIA,201301</a></p>
+                </div>
+        
+                <div class="email">
+                    <i class="bi bi-envelope"></i>
+                    <h4>Email:</h4>
+                    <p><a href="mailto:Aashisharma@gmail.com">Aashisharma@gmail.com</a></p>
+                </div>
+        
+                <div class="phone">
+                    <i class="bi bi-phone"></i>
+                    <h4>Call:</h4>
+                    <p>+91 9891140000</p>
+                </div>
+        
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3504.3892780693886!2d77.38386157549814!3d28.558071075705403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMzJzI5LjEiTiA3N8KwMjMnMTEuMiJF!5e0!3m2!1sen!2sin!4v1726997786651!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p><a href="https://www.gmail.com/">Aashisharma@gmail.com</a></p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 9891140000</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        </div>
+        
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <form id="contact-form" role="form" class="php-email-form">
               <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
+                  <div class="form-group col-md-6">
+                      <label for="name">Your Name</label>
+                      <input type="text" name="name" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="email">Your Email</label>
+                      <input type="email" class="form-control" name="email" id="email" required>
+                  </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                  <label for="message">Message</label>
+                  <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
               </div>
+              <!-- Message placeholders -->
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="loading" style="display:none;">Loading...</div>
+                  <div class="error-message" style="display:none;color:white;"></div>
+                  <div class="sent-message" style="display:none;color:white;">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
+              <div class="text-center">
+                  <button type="submit" onclick="sendMail(event)">Send Message</button>
+              </div>
+          </form>
+      </div>
 
+      
+
+        
         </div>
 
       </div>
